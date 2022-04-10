@@ -2,6 +2,14 @@
   "name": "x-virtual",
   "private": true,
   "version": "0.0.0",
+  "main": "./lib/x-virtual.umd.js",
+  "module": "./lib/x-virtual.es.js",
+  "exports": {
+    ".": {
+      "import": "./lib/x-virtual.es.js",
+      "require": "./lib/x-virtual.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -23,6 +31,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",

@@ -1,22 +1,31 @@
 import React, { useRef } from "react";
-import { VirtualList } from "./components/VirtualList";
+import { XVirtual } from "@/components/x-virtual";
 
 function App() {
   const eleRef = useRef<any>(null);
-  const onClick = () => {
-    eleRef?.current?.scrollToIndex(20);
-  };
-
   return (
     <div className="App">
-      <VirtualList
+      <XVirtual
         data={Array.from({ length: 2000 }, (_, i) => `andy-${i}`)}
         itemHeight={40}
-        windowHeight={200}
+        windowHeight={window.innerHeight / 2}
         ref={eleRef}
       />
       <br />
-      <button onClick={onClick}>scroll</button>
+      <button
+        onClick={() => {
+          eleRef?.current?.scrollToIndex(20);
+        }}
+      >
+        scroll
+      </button>{" "}
+      <button
+        onClick={() => {
+          eleRef?.current?.scrollToIndex(0);
+        }}
+      >
+        top
+      </button>
     </div>
   );
 }

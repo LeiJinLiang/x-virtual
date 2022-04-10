@@ -7,7 +7,7 @@ import React, {
   useImperativeHandle,
 } from "react";
 import styled from "styled-components";
-import { smoothScroll } from "../utils/smoothScroll";
+import { smoothScroll } from "@/utils/smoothScroll";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -37,7 +37,7 @@ interface ImperativeHandle extends HTMLDivElement {
   scrollToIndex(index: number): void;
 }
 
-export const VirtualList: FC<IVirtualListProps> = forwardRef(
+export const XVirtual: FC<IVirtualListProps> = forwardRef(
   (
     { itemHeight, windowHeight, data },
     ref: React.ForwardedRef<HTMLDivElement>

@@ -39,6 +39,12 @@
       "settings": {
         "jest": {
           "version": 26
-        }
+        },
+        "import/resolver": {
+          "alias": {
+            "map": [
+              ["@", "./src"]
+            ]
+          }
       }
 }
