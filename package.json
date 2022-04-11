@@ -1,6 +1,6 @@
 {
   "name": "x-virtual",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "main": "./lib/x-virtual.umd.js",
   "module": "./lib/x-virtual.es.js",
