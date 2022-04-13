@@ -11,6 +11,7 @@ export default defineConfig({
       name: 'x-virtual',
       fileName: (format) => `x-virtual.${format}.js`
     },
+    minify: false,
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
