@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "declaration": true,
+        "allowJs": true,
+        "emitDeclarationOnly": true,
+        "allowSyntheticDefaultImports":true,
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "paths": {
+          "@/*": ["src/*"]
+        },
+        "outFile": "types/index.d.ts"
+    },
+    "include": ["./src/components/**/*.tsx"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+  }
+  
