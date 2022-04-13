@@ -11,7 +11,8 @@
         "paths": {
           "@/*": ["src/*"]
         },
-        "outFile": "types/index.d.ts"
+        "outDir": "@types",
+        "outFile": "@types/x-virtual/index.d.ts"
     },
     "include": ["./src/components/**/*.tsx"],
     "references": [{ "path": "./tsconfig.node.json" }]
