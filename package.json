@@ -3,9 +3,11 @@
   "private": false,
   "version": "0.0.0",
   "main": "./lib/x-virtual.umd.js",
+  "module": "./lib/x-virtual.es.js",
   "exports": {
     ".": {
-      "import": "./lib/x-virtual.umd.js"
+      "import": "./lib/x-virtual.es.js",
+      "require": "./lib/x-virtual.umd.js"
     }
   },
   "types": "./types/index.d.ts",
