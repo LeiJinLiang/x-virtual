@@ -6,10 +6,13 @@ function App() {
   return (
     <div className="App">
       <XVirtual
-        data={Array.from({ length: 2000 }, (_, i) => `andy-${i}`)}
+        data={Array.from({ length: 20 }, (_, i) => `andy-${i}`)}
         itemHeight={40}
         windowHeight={window.innerHeight / 2}
         ref={eleRef}
+        itemContent={(item)=> {
+          return <div>{item}</div>
+        }}
       />
       <br />
       <button
